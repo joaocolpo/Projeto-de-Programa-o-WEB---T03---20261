@@ -1,6 +1,10 @@
 .header {
   display: flex;
+<<<<<<< HEAD
   align-items: flex-start;
+=======
+  align-items: center;
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   justify-content: space-between;
   margin-bottom: var(--spacing-lg);
   flex-wrap: wrap;
@@ -9,6 +13,7 @@
 
 .header h1 {
   font-size: 24px;
+<<<<<<< HEAD
   font-weight: 700;
 }
 
@@ -16,11 +21,14 @@
   font-size: 13px;
   color: var(--color-text-secondary);
   margin-top: 2px;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .monthSelector {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   gap: var(--spacing-xs);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
@@ -42,16 +50,34 @@
 
 .monthSelector button:hover {
   background: var(--color-surface-hover);
+=======
+  gap: var(--spacing-sm);
+}
+
+.monthSelector button {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 6px 12px;
+  font-size: 16px;
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   color: var(--color-text);
 }
 
 .monthLabel {
+<<<<<<< HEAD
   font-size: 14px;
+=======
+  font-size: 15px;
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   font-weight: var(--font-weight-semibold);
   text-transform: capitalize;
   min-width: 140px;
   text-align: center;
+<<<<<<< HEAD
   color: var(--color-text);
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .cards {
@@ -77,13 +103,19 @@
 .recentSection {
   background: var(--color-surface);
   border-radius: var(--radius-md);
+<<<<<<< HEAD
   border: 1px solid var(--color-border);
   padding: var(--spacing-lg);
   backdrop-filter: blur(20px);
+=======
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .chartSection h2,
 .recentSection h2 {
+<<<<<<< HEAD
   font-size: 15px;
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--spacing-md);
@@ -108,6 +140,12 @@
   font-variant-numeric: tabular-nums;
 }
 
+=======
+  font-size: 16px;
+  margin-bottom: var(--spacing-md);
+}
+
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 .recentHeader {
   display: flex;
   justify-content: space-between;
@@ -119,12 +157,15 @@
   font-size: 13px;
   color: var(--color-primary);
   text-decoration: none;
+<<<<<<< HEAD
   font-weight: var(--font-weight-medium);
   transition: color 0.2s;
 }
 
 .viewAll:hover {
   color: var(--color-primary-hover);
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .transactionList {
@@ -143,6 +184,7 @@
   border-bottom: none;
 }
 
+<<<<<<< HEAD
 .transactionLeft {
   display: flex;
   align-items: center;
@@ -170,6 +212,11 @@
   font-size: 14px;
   display: block;
   color: var(--color-text);
+=======
+.transactionDesc {
+  font-size: 14px;
+  display: block;
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .transactionDate {
@@ -181,14 +228,20 @@
   color: var(--color-income);
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
+<<<<<<< HEAD
   font-variant-numeric: tabular-nums;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .expenseValue {
   color: var(--color-expense);
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
+<<<<<<< HEAD
   font-variant-numeric: tabular-nums;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .empty {
@@ -196,7 +249,10 @@
   font-size: 14px;
   text-align: center;
   padding: var(--spacing-xl);
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }

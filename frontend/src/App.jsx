@@ -7,6 +7,10 @@ import RegisterPage from './pages/Register/RegisterPage';
 import DashboardPage from './pages/Dashboard/DashboardPage';
 import TransactionsPage from './pages/Transactions/TransactionsPage';
 import CategoriesPage from './pages/Categories/CategoriesPage';
+<<<<<<< HEAD
+=======
+import ReportsPage from './pages/Reports/ReportsPage';
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 
 function App() {
   return (
@@ -17,6 +21,10 @@ function App() {
         <Route path="/" element={<PrivateRoute><Layout><DashboardPage /></Layout></PrivateRoute>} />
         <Route path="/transactions" element={<PrivateRoute><Layout><TransactionsPage /></Layout></PrivateRoute>} />
         <Route path="/categories" element={<PrivateRoute><Layout><CategoriesPage /></Layout></PrivateRoute>} />
+<<<<<<< HEAD
+=======
+        <Route path="/reports" element={<PrivateRoute><Layout><ReportsPage /></Layout></PrivateRoute>} />
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AuthProvider>

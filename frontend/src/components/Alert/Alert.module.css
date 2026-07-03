@@ -6,19 +6,30 @@
   border-radius: var(--radius-sm);
   font-size: 14px;
   margin-bottom: var(--spacing-md);
+<<<<<<< HEAD
   backdrop-filter: blur(10px);
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .success {
   background-color: var(--color-income-bg);
   color: var(--color-income);
+<<<<<<< HEAD
   border: 1px solid rgba(52, 211, 153, 0.2);
+=======
+  border: 1px solid var(--color-income);
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .error {
   background-color: var(--color-expense-bg);
   color: var(--color-expense);
+<<<<<<< HEAD
   border: 1px solid rgba(251, 113, 133, 0.2);
+=======
+  border: 1px solid var(--color-expense);
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .close {
@@ -27,10 +38,13 @@
   font-size: 18px;
   color: inherit;
   padding: 0 0 0 var(--spacing-sm);
+<<<<<<< HEAD
   opacity: 0.7;
   transition: opacity 0.2s;
 }
 
 .close:hover {
   opacity: 1;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }

@@ -45,6 +45,7 @@ export default function RegisterPage() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
+<<<<<<< HEAD
         <div className={styles.logoArea}>
           <div className={styles.logoIcon}>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -55,6 +56,10 @@ export default function RegisterPage() {
           <h1 className={styles.logo}>CoinTrack</h1>
           <p className={styles.subtitle}>Crie sua conta</p>
         </div>
+=======
+        <h1 className={styles.logo}>CoinTrack</h1>
+        <p className={styles.subtitle}>Crie sua conta</p>
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 
         {error && <Alert type="error" message={error} onClose={() => setError('')} />}
 

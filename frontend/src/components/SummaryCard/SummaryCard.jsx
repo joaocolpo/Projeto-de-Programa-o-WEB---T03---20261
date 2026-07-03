@@ -1,5 +1,6 @@
 import styles from './SummaryCard.module.css';
 
+<<<<<<< HEAD
 const icons = {
   income: (
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -20,6 +21,9 @@ const icons = {
 };
 
 export default function SummaryCard({ title, value, color, iconType }) {
+=======
+export default function SummaryCard({ title, value, color, icon }) {
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   const formattedValue = Number(value).toLocaleString('pt-BR', {
     style: 'currency',
     currency: 'BRL',
@@ -27,6 +31,7 @@ export default function SummaryCard({ title, value, color, iconType }) {
 
   return (
     <div className={styles.card}>
+<<<<<<< HEAD
       <div className={styles.cardTop}>
         <p className={styles.title}>{title}</p>
         <div className={styles.icon} style={{ color }}>
@@ -35,6 +40,15 @@ export default function SummaryCard({ title, value, color, iconType }) {
       </div>
       <p className={styles.value}>{formattedValue}</p>
       <div className={styles.accent} style={{ background: color }} />
+=======
+      <div className={styles.icon} style={{ backgroundColor: `${color}15`, color }}>
+        {icon}
+      </div>
+      <div>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.value} style={{ color }}>{formattedValue}</p>
+      </div>
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
     </div>
   );
 }

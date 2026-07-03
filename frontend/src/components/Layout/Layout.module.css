@@ -7,24 +7,34 @@
   flex: 1;
   margin-left: var(--sidebar-width);
   padding: var(--spacing-lg);
+<<<<<<< HEAD
   max-width: 100%;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .menuBtn {
   display: none;
+<<<<<<< HEAD
   background: var(--color-surface);
+=======
+  background: none;
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   padding: var(--spacing-xs) var(--spacing-sm);
   font-size: 20px;
   margin-bottom: var(--spacing-md);
   color: var(--color-text);
+<<<<<<< HEAD
   backdrop-filter: blur(10px);
   transition: background 0.2s;
 }
 
 .menuBtn:hover {
   background: var(--color-surface-hover);
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 @media (max-width: 768px) {

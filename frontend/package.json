@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+<<<<<<< HEAD
     "start": "vite",
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
     "dev": "vite",
     "build": "vite build",
     "lint": "oxlint",

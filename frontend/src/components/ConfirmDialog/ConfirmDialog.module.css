@@ -1,7 +1,10 @@
 .message {
   margin-bottom: var(--spacing-lg);
   color: var(--color-text);
+<<<<<<< HEAD
   line-height: 1.6;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .actions {
@@ -11,6 +14,7 @@
 }
 
 .cancelBtn {
+<<<<<<< HEAD
   padding: 10px var(--spacing-md);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
@@ -27,12 +31,26 @@
 
 .confirmBtn {
   padding: 10px var(--spacing-md);
+=======
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+}
+
+.confirmBtn {
+  padding: var(--spacing-xs) var(--spacing-md);
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   border: none;
   border-radius: var(--radius-sm);
   background: var(--color-expense);
   color: white;
+<<<<<<< HEAD
   font-weight: var(--font-weight-semibold);
   transition: opacity 0.2s;
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .confirmBtn:hover {

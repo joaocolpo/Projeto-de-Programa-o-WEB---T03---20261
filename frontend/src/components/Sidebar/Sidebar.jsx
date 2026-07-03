@@ -3,6 +3,7 @@ import { useAuth } from '../../hooks/useAuth';
 import styles from './Sidebar.module.css';
 
 const navItems = [
+<<<<<<< HEAD
   {
     to: '/',
     label: 'Dashboard',
@@ -33,6 +34,12 @@ const navItems = [
       </svg>
     ),
   },
+=======
+  { to: '/', label: 'Dashboard', icon: '📊' },
+  { to: '/transactions', label: 'Transações', icon: '💰' },
+  { to: '/categories', label: 'Categorias', icon: '📁' },
+  { to: '/reports', label: 'Relatórios', icon: '📈' },
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 ];
 
 export default function Sidebar({ isOpen, onClose }) {
@@ -43,12 +50,15 @@ export default function Sidebar({ isOpen, onClose }) {
       {isOpen && <div className={styles.overlay} onClick={onClose} />}
       <aside className={`${styles.sidebar} ${isOpen ? styles.open : ''}`}>
         <div className={styles.logo}>
+<<<<<<< HEAD
           <div className={styles.logoIcon}>
             <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <circle cx="12" cy="12" r="10" />
               <path d="M12 6v12M15 9.5H10.5a2.5 2.5 0 0 0 0 5H14a2.5 2.5 0 0 1 0 5H9" />
             </svg>
           </div>
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
           <h1>CoinTrack</h1>
         </div>
 
@@ -70,6 +80,7 @@ export default function Sidebar({ isOpen, onClose }) {
         </nav>
 
         <div className={styles.userSection}>
+<<<<<<< HEAD
           <div className={styles.userAvatar}>
             {user?.name?.charAt(0)?.toUpperCase() || 'U'}
           </div>
@@ -84,6 +95,12 @@ export default function Sidebar({ isOpen, onClose }) {
               Sair
             </button>
           </div>
+=======
+          <div className={styles.userName}>{user?.name}</div>
+          <button className={styles.logoutBtn} onClick={logout}>
+            Sair
+          </button>
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
         </div>
       </aside>
     </>

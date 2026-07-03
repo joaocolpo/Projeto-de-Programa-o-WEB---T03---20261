@@ -1,8 +1,12 @@
 .overlay {
   position: fixed;
   inset: 0;
+<<<<<<< HEAD
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(4px);
+=======
+  background: rgba(0, 0, 0, 0.5);
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,10 +14,16 @@
 }
 
 .modal {
+<<<<<<< HEAD
   background: var(--color-surface-solid);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+=======
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
   width: 90%;
   max-width: 500px;
   max-height: 90vh;
@@ -38,6 +48,7 @@
   border: none;
   font-size: 24px;
   color: var(--color-text-secondary);
+<<<<<<< HEAD
   width: 32px;
   height: 32px;
   border-radius: var(--radius-sm);
@@ -50,6 +61,8 @@
 .close:hover {
   background: var(--color-surface-hover);
   color: var(--color-text);
+=======
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .body {

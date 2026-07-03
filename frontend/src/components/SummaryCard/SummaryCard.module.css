@@ -1,4 +1,5 @@
 .card {
+<<<<<<< HEAD
   position: relative;
   background: var(--color-surface);
   backdrop-filter: blur(20px);
@@ -29,11 +30,31 @@
   align-items: center;
   justify-content: center;
   opacity: 0.8;
+=======
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  background: var(--color-surface);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
 
 .title {
   font-size: 13px;
   color: var(--color-text-secondary);
+<<<<<<< HEAD
   font-weight: var(--font-weight-medium);
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -53,4 +74,12 @@
   right: 0;
   height: 3px;
   opacity: 0.6;
+=======
+  margin-bottom: 4px;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: var(--font-weight-semibold);
+>>>>>>> 18b6c1050fb311df61f628fac5bf42b35b7668d4
 }
