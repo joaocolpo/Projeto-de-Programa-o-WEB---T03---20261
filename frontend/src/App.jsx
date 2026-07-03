@@ -7,7 +7,6 @@ import RegisterPage from './pages/Register/RegisterPage';
 import DashboardPage from './pages/Dashboard/DashboardPage';
 import TransactionsPage from './pages/Transactions/TransactionsPage';
 import CategoriesPage from './pages/Categories/CategoriesPage';
-import ReportsPage from './pages/Reports/ReportsPage';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
         <Route path="/" element={<PrivateRoute><Layout><DashboardPage /></Layout></PrivateRoute>} />
         <Route path="/transactions" element={<PrivateRoute><Layout><TransactionsPage /></Layout></PrivateRoute>} />
         <Route path="/categories" element={<PrivateRoute><Layout><CategoriesPage /></Layout></PrivateRoute>} />
-        <Route path="/reports" element={<PrivateRoute><Layout><ReportsPage /></Layout></PrivateRoute>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AuthProvider>

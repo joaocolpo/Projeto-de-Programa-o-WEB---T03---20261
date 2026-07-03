@@ -15,7 +15,6 @@ app.use('/api/auth', require('./routes/auth.routes'));
 app.use('/api/users', require('./routes/user.routes'));
 app.use('/api/categories', require('./routes/category.routes'));
 app.use('/api/transactions', require('./routes/transaction.routes'));
-app.use('/api/reports', require('./routes/report.routes'));
 
 app.use((req, res) => {
   res.status(404).json({ error: 'Rota não encontrada' });

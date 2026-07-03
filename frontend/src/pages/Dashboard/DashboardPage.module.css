@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: var(--spacing-lg);
   flex-wrap: wrap;
@@ -9,29 +9,49 @@
 
 .header h1 {
   font-size: 24px;
+  font-weight: 700;
+}
+
+.headerSub {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  margin-top: 2px;
 }
 
 .monthSelector {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
-}
-
-.monthSelector button {
+  gap: var(--spacing-xs);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  padding: 6px 12px;
-  font-size: 16px;
+  padding: 4px;
+  backdrop-filter: blur(10px);
+}
+
+.monthSelector button {
+  background: none;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 8px;
+  color: var(--color-text-secondary);
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.monthSelector button:hover {
+  background: var(--color-surface-hover);
   color: var(--color-text);
 }
 
 .monthLabel {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: var(--font-weight-semibold);
   text-transform: capitalize;
   min-width: 140px;
   text-align: center;
+  color: var(--color-text);
 }
 
 .cards {
@@ -57,14 +77,35 @@
 .recentSection {
   background: var(--color-surface);
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--color-border);
   padding: var(--spacing-lg);
+  backdrop-filter: blur(20px);
 }
 
 .chartSection h2,
 .recentSection h2 {
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: var(--font-weight-semibold);
   margin-bottom: var(--spacing-md);
+}
+
+.tooltip {
+  background: var(--color-surface-solid);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.tooltipLabel {
+  font-size: 12px;
+  color: var(--color-text-secondary);
+}
+
+.tooltipValue {
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  font-variant-numeric: tabular-nums;
 }
 
 .recentHeader {
@@ -78,6 +119,12 @@
   font-size: 13px;
   color: var(--color-primary);
   text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: color 0.2s;
+}
+
+.viewAll:hover {
+  color: var(--color-primary-hover);
 }
 
 .transactionList {
@@ -96,9 +143,33 @@
   border-bottom: none;
 }
 
+.transactionLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.transactionDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dotIncome {
+  background: var(--color-income);
+  box-shadow: 0 0 6px rgba(52, 211, 153, 0.4);
+}
+
+.dotExpense {
+  background: var(--color-expense);
+  box-shadow: 0 0 6px rgba(251, 113, 133, 0.4);
+}
+
 .transactionDesc {
   font-size: 14px;
   display: block;
+  color: var(--color-text);
 }
 
 .transactionDate {
@@ -110,12 +181,14 @@
   color: var(--color-income);
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .expenseValue {
   color: var(--color-expense);
   font-weight: var(--font-weight-semibold);
   white-space: nowrap;
+  font-variant-numeric: tabular-nums;
 }
 
 .empty {
@@ -123,4 +196,7 @@
   font-size: 14px;
   text-align: center;
   padding: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

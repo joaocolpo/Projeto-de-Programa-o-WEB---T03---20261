@@ -45,8 +45,16 @@ export default function RegisterPage() {
   return (
     <div className={styles.container}>
       <div className={styles.card}>
-        <h1 className={styles.logo}>CoinTrack</h1>
-        <p className={styles.subtitle}>Crie sua conta</p>
+        <div className={styles.logoArea}>
+          <div className={styles.logoIcon}>
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v12M15 9.5H10.5a2.5 2.5 0 0 0 0 5H14a2.5 2.5 0 0 1 0 5H9" />
+            </svg>
+          </div>
+          <h1 className={styles.logo}>CoinTrack</h1>
+          <p className={styles.subtitle}>Crie sua conta</p>
+        </div>
 
         {error && <Alert type="error" message={error} onClose={() => setError('')} />}
 
